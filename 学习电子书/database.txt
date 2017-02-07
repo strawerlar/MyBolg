@@ -1,0 +1,19 @@
+******************************         mysql           ******************************
+login     mysql -u root -p
+show databases;  // need ';' End of each line you need to add a semicolon
+use [databases name]; // change databases
+show tables; 
+select * from [tablename] where ...
+
+
+******************************         mongo           ******************************
+login    mongo
+show  dbs
+use [databases name]
+show collections   // there is no table but collection in mongo
+db.[collection name].find({查询条件},{显示哪些属性})
+	db.collection.find({'UserName':'zhangsan'})   // !!! mongo中的条件都使用':'而不是'='
+	db.activedegree.find({'UserName': 'zhangsan'},{'UserName':1} ) //只显示id和UserName属性
+
+
+	
