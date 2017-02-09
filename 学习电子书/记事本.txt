@@ -1,0 +1,44 @@
+processon
+
+mengxiang1991@ediankai.com 
+kuai
+
+
+	MySQL 密码123456
+	
+	查看了member会员 departemnt部门 staff员工 的表结构
+	
+	
+
+	数据库     106.2.206.74   root/DB@!!211db
+
+	web端的数据库 http://192.168.0.211/htdocs/phpMyadmin/index.php  库scrm  root/DB@!!211db
+
+	sdc 数据库监控 http://qiye.tsdccore.ediankai.com/sdc/druid/sql.html
+
+	redis 在业务层添加缓存  http://192.168.0.211/htdocs/phpRedisAdmin/?overview&s=9   admin / RedisAdmin211
+
+	打包jenkins:   内网 http://192.168.0.102:8081 
+
+
+	mongoDB:   http://192.168.0.211/htdocs/mongoAdmin/index.php?action=login.index&host=0  admin/admin 
+
+	svn://113.31.16.76/trunk/sdc  
+	
+	服务器日志  http://106.2.206.78:5601/  nginx日志 使用 test-scrm_access_log  test-scrm_error_log
+	    scrm larval日志使用  test-scrm_laravel_log host对应的是不同服务器  type我设置的是日志类型
+	
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+http://mirrors.aliyun.com/pypi/simple/tensorflow/windows/cpu/tensorflow-0.12.0rc0-cp35-cp35m-win_amd64.whl
+
+https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0rc0-cp35-cp35m-win_amd64.whl
+
+
+使用到的工具
+	python
+	
+	octave
+	
+	IDEA  mongo工具on idea
+	

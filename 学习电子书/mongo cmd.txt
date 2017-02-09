@@ -1,0 +1,30 @@
+services.msc
+
+
+.\mongod.exe --dbpath=E:\mongodb\data --logpath=E:\mongodb\log\mongodb.log –-rest
+
+db.addUser("test", "test"); 
+
+db.createUser({user:"test",pwd:"test",roles:[{role:"readWrite",db:"test"}]})
+
+
+qiye.wxsdc.ediankai.com
+
+
+
+mongoexport -h IP --port 端口 -u 用户名 -p 密码 -d 数据库 -c 表名 -f 字段 -q 条件导出 --type json/csv -o 文件名 
+
+mongoexport -h 127.0.0.1 --port 27017 -d wx_user -c activedegree --type json -o activedegree
+
+
+//本地导出数据
+mongoexport -d my_mongodb -c user -o user.dat
+mongoexport -d [数据库名] -c [集合名] -o [导出文件名]
+
+mongoexport -d [] -c [] --type csv -f "fields," -o []
+PS E:\mongodb> mongoexport -d wx_user -c activedegree --type csv -f "_id,UserName,UserScore,isActive" -o 0_sigmoid_withweight_20_0.1.csv
+
+
+//数据库导入
+mongoimport -d wx_user -c aaa activedegree
+mongoimport -d [数据库名] -c [集合名] [导入文件名]
