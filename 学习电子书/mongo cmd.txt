@@ -24,7 +24,15 @@ mongoexport -d [数据库名] -c [集合名] -o [导出文件名]
 mongoexport -d [] -c [] --type csv -f "fields," -o []
 PS E:\mongodb> mongoexport -d wx_user -c activedegree --type csv -f "_id,UserName,UserScore,isActive" -o 0_sigmoid_withweight_20_0.1.csv
 
+PS E:\mongodb> mongoexport -d feihe -c UserStatistics -o  2017.2.14_userstatisti
+cs.csv --type csv -f '_id,username,subscribetime,unsubscribetime,lastactiontime,
+days_noaction,action_rate,subscribe,unsubscribe,scan,upload_location,click,jump,
+text,image,voice,video,shortvideo,msg_location,link,mark'
+
 
 //数据库导入
 mongoimport -d wx_user -c aaa activedegree
 mongoimport -d [数据库名] -c [集合名] [导入文件名]
+
+//字段更名
+db.test.update({}, {$rename : {"abc" : "def"}}, false, true)
